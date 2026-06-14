@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Undangan Ulang Tahun</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#87CEFA,#B0E0E6,#E6F7FF);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+
+.container{
+    width:90%;
+    max-width:450px;
+    background:white;
+    padding:30px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+    animation:fadeIn 2s ease;
+}
+
+h1{
+    color:#4A90E2;
+    margin-bottom:10px;
+}
+
+h2{
+    color:#666;
+    margin-bottom:20px;
+}
+
+.card{
+    background:#f0f8ff;
+    padding:20px;
+    border-radius:20px;
+    margin-top:15px;
+}
+
+.info{
+    margin:12px 0;
+    color:#555;
+    font-size:17px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#4A90E2;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+.balloon{
+    position:absolute;
+    width:50px;
+    animation:float 6s infinite ease-in-out;
+}
+
+.balloon:nth-child(1){
+    left:5%;
+    top:100%;
+}
+
+.balloon:nth-child(2){
+    right:10%;
+    top:100%;
+    animation-delay:2s;
+}
+
+.balloon:nth-child(3){
+    left:50%;
+    top:100%;
+    animation-delay:4s;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0);
+    }
+    100%{
+        transform:translateY(-120vh);
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+</style>
+</head>
+
+<body>
+
+🎈
+<div class="balloon">🎈</div>
+<div class="balloon">🎈</div>
+<div class="balloon">🎈</div>
+
+<div class="container">
+    <h1>🎂 Birthday Party 🎂</h1>
+    <h2>Mesalina's Birthday</h2>
+
+    <p>
+        Dengan penuh kebahagiaan, kami mengundang
+        teman-teman untuk hadir dalam acara ulang tahun.
+    </p>
+
+    <div class="card">
+        <div class="info">📅 Minggu, 20 Juli 2026</div>
+        <div class="info">🕒 14.00 WIB</div>
+        <div class="info">📍 Rumah Mesalina</div>
+        <div class="info">🎁 Kehadiranmu adalah hadiah terbaik</div>
+    </div>
+
+    <a href="#" class="btn">Konfirmasi Kehadiran</a>
+</div>
+
+</body>
+</html>
